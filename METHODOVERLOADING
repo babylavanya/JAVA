@@ -1,0 +1,22 @@
+class Methodoverload
+{
+int add(int p,int q)
+{
+return(p+q);
+}
+float add(int p,int q,float r)
+{
+return(p+q+r);
+}
+}
+class Methodoverloading
+{
+public static void main(String args[])
+{
+Methodoverload x=new Methodoverload();
+int a=x.add(10,20);
+float b=x.add(10,20,2.5f);
+System.out.println("a="+a);
+System.out.println("b="+b);
+}
+}
